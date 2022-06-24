@@ -1,23 +1,24 @@
 class country {
-    constructor(countryname,language, capital, religion,government,currency) {
+    constructor(countryname,language, capital, religion,government,currency, famous) {
         this.countryname = countryname
         this.language = language
         this.capital = capital
         this.religion = religion
         this.government = government
         this.currency = currency
+        this.famous = famous
     }
 }
-const USA = new country("United States of America","English","Washington, D.C.","Christianity","Constitutional Republic", "U.S. Dollar (USD)")
-const Germany = new country("Germany","German","Berlin","nothing","Parliamentary Republic","Euro (EUR)")
-const Japan = new country("Japan","Japanese","Tokyo","nothing","Parliamentary Constitutional Monarchy","Japanese Yen")
-const SouthKorea = new country("South Korea","Korean","Seoul","nothing","Unitary Presidiential Republic","Korean Republic Won (KRW)")
-const Italy = new country("Italy","Italian","Rome","Christianity","Unitary Parliamentary Republic","Euro (EUR)")
-const Thailand = new country("Thailand","Thai","Bangkok","Buddhism","Unitary Parliamentary Semi-Democratic Constitutional Monarchy","Baht (THB)")
-const Philippines = new country("Philippines","Filipino","Manila","Roman Catholicism","Unitary Presidential Republic","Philippine Peso (PHP)")
-const Australia = new country("Australia","English","Canberra","Christianity","Federal Parliamentary Constitutional Monarchy","Australian Dollar (AUD)")
-const France = new country("France","French","Paris","Christianity","Unitary Semi-Presidential Republic","Euro (EUR)")
-const Norway = new country("Norway","Norwegian","Oslo","Christianity","Unitary Parliamentary Constitutional Monarchy","Norwegian Krone (NOK)")
+const USA = new country("United States of America","English","Washington, D.C.","Christianity","Constitutional Republic", "U.S. Dollar (USD)", " its history, its film industry, its music industry and its dozens of unique and historic monuments")
+const Germany = new country("Germany","German","Berlin","nothing","Parliamentary Republic","Euro (EUR)","its beer festivals, the autobahn, and its luxury cars")
+const Japan = new country("Japan","Japanese","Tokyo","nothing","Parliamentary Constitutional Monarchy","Japanese Yen","its cherry blossoms, mount fuji, and anime/manga")
+const SouthKorea = new country("South Korea","Korean","Seoul","nothing","Unitary Presidiential Republic","Korean Republic Won (KRW)","K-pop, street food, and medical technology")
+const Italy = new country("Italy","Italian","Rome","Christianity","Unitary Parliamentary Republic","Euro (EUR)", "wine, pizza and pasta")
+const Thailand = new country("Thailand","Thai","Bangkok","Buddhism","Unitary Parliamentary Semi-Democratic Constitutional Monarchy","Baht (THB)","its street food, islands, and temples")
+const Philippines = new country("Philippines","Filipino","Manila","Roman Catholicism","Unitary Presidential Republic","Philippine Peso (PHP)","its festivals, food, and the chocolate hills")
+const Australia = new country("Australia","English","Canberra","Christianity","Federal Parliamentary Constitutional Monarchy","Australian Dollar (AUD)","its exotic wildlife, the didgeridoo, and the great emu war")
+const France = new country("France","French","Paris","Christianity","Unitary Semi-Presidential Republic","Euro (EUR)","Notre Dame, The Eiffel Tower, and Le Louvre")
+const Norway = new country("Norway","Norwegian","Oslo","Christianity","Unitary Parliamentary Constitutional Monarchy","Norwegian Krone (NOK)","The Nothern Lights, The Doomsday Vault, and vikings")
 const imgItem = document.getElementById("flagimage")
 const button = document.getElementById("randomizer")
 const li = document.querySelectorAll("li")
@@ -36,6 +37,7 @@ function pickACountry() {
     li[2].innerHTML = `Our government is considered a ${displayCountry.government}`
     li[3].innerHTML = `In our country we practice ${displayCountry.religion} officially`
     li[4].innerHTML = `We pay for most things in ${displayCountry.currency}`
+    li[5].innerHTML = `Well known for ${displayCountry.famous}`
 }
 button.addEventListener("click", function(){
     pickACountry()
