@@ -22,7 +22,7 @@ const imgItem = document.getElementById("flagimage")
 const button = document.getElementById("randomizer")
 const li = document.querySelectorAll("li")
 const countryList = [USA,Germany,Japan,SouthKorea,Italy,Thailand,Philippines,Australia,France,Norway]
-const flagArray = ["./../images/flagofusa.png","./../images/flagofgermany.png","./../images/flagofjapan.png","./../images/flagofsouthkorea.png","./../images/flagofitaly.png","./../images/flagofthailand.png","./../images/flagofphilippines.png","./../images/flagofaustralia.png","./../images/flagoffrance.png","./../images/flagofnorway.png"]
+const flagArray = ["./images/flagofusa.png","./images/flagofgermany.png","./images/flagofjapan.png","./images/flagofsouthkorea.png","./images/flagofitaly.png","./images/flagofthailand.png","./images/flagofphilippines.png","./images/flagofaustralia.png","./images/flagoffrance.png","./images/flagofnorway.png"]
 
 function pickACountry() {
     const randomIndex = Math.floor(Math.random() * countryList.length)
