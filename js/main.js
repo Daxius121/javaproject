@@ -19,6 +19,7 @@ const Australia = new country("Australia","English","Canberra","Christianity","F
 const France = new country("France","French","Paris","Christianity","Unitary Semi-Presidential Republic","Euro (EUR)")
 const Norway = new country("Norway","Norwegian","Oslo","Christianity","Unitary Parliamentary Constitutional Monarchy","Norwegian Krone (NOK)")
 const imgItem = document.getElementById("flagimage")
+const button = document.getElementById("randomizer")
 const countryList = [USA,Germany,Japan,SouthKorea,Italy,Thailand,Philippines,Australia,France,Norway]
 const flagArray = ["./../images/flagofusa.png","./../images/flagofgermany.png","./../images/flagofjapan.png","./../images/flagofsouthkorea.png","./../images/flagofitaly.png","./../images/flagofthailand.png","./../images/flagofphilippines.png","./../images/flagofaustralia.png","./../images/flagoffrance.png","./../images/flagofnorway.png"]
 
@@ -26,8 +27,13 @@ function pickACountry() {
     const randomIndex = Math.floor(Math.random() * countryList.length)
     const displayCountry = countryList[randomIndex]
     const countryFlag = flagArray[randomIndex]
+    randomizer.innerText = "Continue your journey!"
+    midP.innerText = "Another"
+    midP.classList.add("fst-italic")
     imgItem.src = countryFlag
     nameofcountry.innerText = displayCountry.countryname
 }
-pickACountry()
+button.addEventListener("click", function(){
+    pickACountry()
+})
 console.log(countryList)
