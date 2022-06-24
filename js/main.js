@@ -9,12 +9,12 @@ class country {
     }
 }
 const USA = new country("United States of America","English","Washington, D.C.","Christianity","Constitutional Republic", "U.S. Dollar (USD)")
-const Germany = new country("Germany","German","Berlin","None","Parliamentary Republic","Euro (EUR)")
-const Japan = new country("Japan","Japanese","Tokyo","None","Parliamentary Constitutional Monarchy","Japanese Yen")
-const SouthKorea = new country("South Korea","Korean","Seoul","None","Unitary Presidiential Republic","Korean Republic Won (KRW)")
+const Germany = new country("Germany","German","Berlin","nothing","Parliamentary Republic","Euro (EUR)")
+const Japan = new country("Japan","Japanese","Tokyo","nothing","Parliamentary Constitutional Monarchy","Japanese Yen")
+const SouthKorea = new country("South Korea","Korean","Seoul","nothing","Unitary Presidiential Republic","Korean Republic Won (KRW)")
 const Italy = new country("Italy","Italian","Rome","Christianity","Unitary Parliamentary Republic","Euro (EUR)")
 const Thailand = new country("Thailand","Thai","Bangkok","Buddhism","Unitary Parliamentary Semi-Democratic Constitutional Monarchy","Baht (THB)")
-const Philippines = new country("Philippines","Filipino","Manila","Roman Catholic","Unitary Presidential Republic","Philippine Peso (PHP)")
+const Philippines = new country("Philippines","Filipino","Manila","Roman Catholicism","Unitary Presidential Republic","Philippine Peso (PHP)")
 const Australia = new country("Australia","English","Canberra","Christianity","Federal Parliamentary Constitutional Monarchy","Australian Dollar (AUD)")
 const France = new country("France","French","Paris","Christianity","Unitary Semi-Presidential Republic","Euro (EUR)")
 const Norway = new country("Norway","Norwegian","Oslo","Christianity","Unitary Parliamentary Constitutional Monarchy","Norwegian Krone (NOK)")
@@ -34,7 +34,7 @@ function pickACountry() {
     li[0].innerHTML = `Our nations language is ${displayCountry.language}`
     li[1].innerHTML = `Our nations capital city is ${displayCountry.capital}`
     li[2].innerHTML = `Our government is considered a ${displayCountry.government}`
-    li[3].innerHTML = `In our country we practice ${displayCountry.religion}`
+    li[3].innerHTML = `In our country we practice ${displayCountry.religion} officially`
     li[4].innerHTML = `We pay for most things in ${displayCountry.currency}`
 }
 button.addEventListener("click", function(){
