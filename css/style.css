@@ -38,6 +38,9 @@
     .rounded-pill {
         margin-top: 190px;
     }
+    .marginfix {
+        margin-top: 3rem;
+    }
 }
 
 
@@ -64,5 +67,5 @@
 }
 
 #flagimage {
-    max-height: 45vh;
+    max-height: 47vh;
 }
