@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+@keyframes slideInTop {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInSide {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media (min-width:389px) {
+    .rounded-pill {
+        margin-top: 65px;
+    }
+}
+
+@media (min-width:1180px) {
+    .rounded-pill {
+        margin-top: 190px;
+    }
+}
+
+
+#topP {
+    animation-name: slideInTop;
+    animation-duration: 2s;
+}
+
+#midP {
+    animation-name: slideInSide;
+    animation-duration: 2s;
+}
+
+#bottomP {
+    animation-name: slideInBottom;
+    animation-duration: 2s;
+}
+
+#topBackground {
+    background: url(./../images/topbackgroundphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
