@@ -62,3 +62,7 @@
     background-size: cover;
     height: 30vh;
 }
+
+#flagimage {
+    max-height: 45vh;
+}
