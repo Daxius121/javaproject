@@ -28,8 +28,6 @@ function pickACountry() {
     const randomIndex = Math.floor(Math.random() * countryList.length)
     const displayCountry = countryList[randomIndex]
     const countryFlag = flagArray[randomIndex]
-    randomizer.innerText = "Continue your journey!"
-    midP.innerText = "Another"
     midP.classList.add("fst-italic")
     imgItem.src = countryFlag
     nameofcountry.innerText = displayCountry.countryname
@@ -41,5 +39,11 @@ function pickACountry() {
 }
 button.addEventListener("click", function(){
     pickACountry()
+    if (randomizer.innerText === "Start your journey here!") {
+        randomizer.innerText = "Continue your journey!"
+    }
+
+    if (midP.innerText === "Your") {
+        midP.innerText = "Another"
+    }
 })
-console.log(li)
